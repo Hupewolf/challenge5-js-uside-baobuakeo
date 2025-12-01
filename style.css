@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-box {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    border: none;
+    background-color: rgba(0, 219, 219, 0.884);
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(1, 241, 241);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.result {
+    transition: 0.3s;
+}
+.action {
+    animation: nhay 0.3s ease;
+}
+@keyframes nhay {
+    0% { opacity: 0.2; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
