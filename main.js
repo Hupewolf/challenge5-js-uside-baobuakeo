@@ -36,5 +36,5 @@ function play(userChoice) {
 function emoji(str) {
     if (str === "rock") return "👊";
     if (str === "paper") return "✋";
-    return "✌️";
+    if (str === "scissors") return "✌️";
 }
