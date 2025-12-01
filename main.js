@@ -26,10 +26,6 @@ function play(userChoice) {
     const resultBox = document.getElementById("resultBox");
     resultBox.textContent = `Bạn: ${emoji(userChoice)} — Máy: ${emoji(computerChoice)} → ${result}`;
 
-    resultBox.classList.remove("action");
-    void resultBox.offsetWidth; 
-    resultBox.classList.add("action");
-
     document.getElementById("scoreBox").textContent = `Bạn: ${userScore} — Máy: ${computerScore}`;
 }
 
